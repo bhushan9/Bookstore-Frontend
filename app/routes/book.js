@@ -4,7 +4,7 @@ export default Route.extend({
 	model: function() {
 		
 
-		return Ember.$.getJSON("http://127.0.0.1:3000/api/books",function(){
+		return Ember.$.getJSON("http://159.203.166.19:3000/api/books",function(){
 			console.debug("WOOHOO");
 		});
 		
