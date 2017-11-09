@@ -1,0 +1,86 @@
+{{outlet}}
+<h1> get /api/books </h1>
+{{#each model.book as |item|}} 
+
+Title:	{{item.title}}
+	<br>
+Genre:	{{item.genre}}
+	<br>
+Description:	{{item.description}}
+	<br>
+Author:	{{item.author}}
+	<br>
+Publisher:	{{item.publisher}}
+	<br>
+Pages:	{{item.pages}}
+	<br>
+image_url:	{{item.image_url}}
+	<br>
+buy_url:	{{item.buy_url}}
+	<br>
+Create_Date:	{{item.create_date}}
+
+
+{{/each}}
+
+
+<br>
+<br>
+<br>
+<br>
+<form class="form-horizontal">  
+  <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Book Title</label>
+    <div class="col-md-5">
+      {{input value=model.title class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Book Genre</label>
+    <div class="col-md-5">
+      {{input value=model.genre class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Book Description</label>
+    <div class="col-md-5">
+      {{input value=model.description class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Author Name</label>
+    <div class="col-md-5">
+      {{input value=model.author class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Publisher Name</label>
+    <div class="col-md-5">
+      {{input value=model.publisher class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Pages</label>
+    <div class="col-md-5">
+      {{input value=model.pages class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Image url</label>
+    <div class="col-md-5">
+      {{input value=model.image_url class="form-control"}}
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Buy_url</label>
+    <div class="col-md-5">
+      {{input value=model.buy_url class="form-control"}}
+    </div>
+  </div>
+    
+  <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <button {{action "submit"}} class="btn btn-sm btn-primary">Save</button>
+   </div>
+ </div>
+</form> 
