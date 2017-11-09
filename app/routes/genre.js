@@ -17,7 +17,7 @@ export default Route.extend({
 			console.debug(genre.name);
 
 			Ember.$.ajax({
-			  url: 'http://127.0.0.1:3000/api/genres',
+			  url: 'http://159.203.166.19:3000/api/genres',
 			  type: "POST",
 			  // dataType: 'json',
 			  contentType: 'application/json',
