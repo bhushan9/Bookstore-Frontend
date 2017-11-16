@@ -1,0 +1,23 @@
+<h1> List of Books </h1>
+{{#each model.book as |item|}} 
+
+Title:	{{item.title}}
+	<br>
+Genre:	{{item.genre}}
+	<br>
+Description:	{{item.description}}
+	<br>
+Author:	{{item.author}}
+	<br>
+Publisher:	{{item.publisher}}
+	<br>
+Pages:	{{item.pages}}
+	<br>
+image_url:	{{item.image_url}}
+	<br>
+buy_url:	{{item.buy_url}}
+	<br>
+Create_Date:	{{item.create_date}}
+
+
+{{/each}}

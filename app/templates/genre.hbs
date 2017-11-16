@@ -1,16 +1,17 @@
 {{outlet}}
-<h1> get /api/genres </h1>
+<h1> Genres </h1>
 {{#each model.genre as |item|}} 
 	<br>
 Name:	{{item.name}}
 	<br>
 Create_Date:	{{item.create_date}}
+<hr>
 {{/each}}
 <br>
 <br>
 <br>
 <br>
-<form class="form-horizontal">  
+<form class="form-horizontal" name="genreForm">  
   <div class="form-group">
     <label for="name" class="col-md-2 control-label">Genre Name</label>
     <div class="col-md-5">

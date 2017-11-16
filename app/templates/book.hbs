@@ -1,5 +1,5 @@
 {{outlet}}
-<h1> get /api/books </h1>
+<h1> Books </h1>
 {{#each model.book as |item|}} 
 
 Title:	{{item.title}}
@@ -20,6 +20,7 @@ buy_url:	{{item.buy_url}}
 	<br>
 Create_Date:	{{item.create_date}}
 
+<hr>
 
 {{/each}}
 

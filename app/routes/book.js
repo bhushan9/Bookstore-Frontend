@@ -15,7 +15,7 @@ export default Route.extend({
 			console.debug("Inside the actions");
 			var book = this.modelFor('book');
 			console.debug(book.name);
-
+			var model = this;
 			Ember.$.ajax({
 			  url: 'http://127.0.0.1:3000/api/books',
 			  type: "POST",
@@ -36,6 +36,7 @@ export default Route.extend({
 			  })
 			}).then(function(resp){
 				console.debug("POST Sucess");
+				model.refresh();
 			  // handle your server response here
 			});
 

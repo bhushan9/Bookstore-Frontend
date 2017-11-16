@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('genre');
+  this.route('name',{ path: 'genre/:name'});
   this.route('book');
   this.route('createGenre');
 });
